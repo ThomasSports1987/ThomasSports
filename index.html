@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomas Sports</title>
+
+    <!-- Google Font "Graduate" -->
     <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-color: black;
-            color: white;
-            font-family: "Times New Roman", Times, serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            text-align: center;
-        }
-        .box {
-            border: 2px solid white;
-            padding: 20px;
-            width: 400px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        }
-        h1 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-            font-family: 'Graduate', sans-serif;
-        }
-        p {
-            font-size: 1.2rem;
-        }
-    </style>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="box">
-        <h1>THOMAS SPORTS</h1>
-        <p>Exciting things are coming soon! Stay tuned for updates.</p>
-    </div>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/logo copy.png" alt="Thomas Sports Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <div>
+            <h1>THOMAS SPORTS</h1>
+            <p>Your all-in-one stop for sports equipment and services</p>
+        </div>
+    </section>
+
+    <!-- Three-box section -->
+    <section class="container">
+        <div class="box">
+            <h2>Products</h2>
+            <p>We offer a wide range of badminton gear, from rackets to shoes.</p>
+        </div>
+        <div class="box">
+            <h2>Services</h2>
+            <p>Expert stringing, coaching, and maintenance services available.</p>
+        </div>
+        <div class="box">
+            <h2>Contact Us</h2>
+            <p>Visit us in-store or reach out for inquiries and assistance.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Thomas Sports. All Rights Reserved.</p>
+    </footer>
 </body>
+
 </html>
