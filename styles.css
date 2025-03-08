@@ -1,0 +1,120 @@
+/* General styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #be2525;
+    color: white;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #8b1e1e;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+}
+
+/* Updated hover effect */
+nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+/* Hero section */
+.hero {
+    background: url('images/homepage_background.jfif') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Graduate', sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+/* Three-box section */
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 10px;
+}
+
+.box {
+    width: 30%;
+    padding: 20px;
+    background: #8b1e1e;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.box h2, .box p {
+    color: white;
+}
+
+/* Hover effect for the boxes */
+.box:hover {
+    background: #a82525;
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #8b1e1e;
+    color: white;
+    text-align: center;
+    padding: 9px;
+    font-size: 1rem;  /* Restored original styling */
+    font-weight: normal; /* Removed any accidental changes */
+}
