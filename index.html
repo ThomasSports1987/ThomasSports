@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thomas Sports</title>
-
-    <!-- Google Font "Graduate" -->
+    
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
 
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/logo copy.png" alt="Thomas Sports Logo" />
+            <img src="images/logo copy.png" alt="Thomas Sports Logo">
         </div>
         <nav>
             <ul>
@@ -29,9 +27,19 @@
         </nav>
     </header>
 
-    <!-- Hero section -->
+    <!-- Hero Section (Slideshow) -->
     <section class="hero">
-        <div>
+        <div class="slideshow">
+            <img src="images/homepage_background1.jfif" class="slide active">
+            <img src="images/homepage_background2.jfif" class="slide">
+            <img src="images/homepage_background3.jfif" class="slide">
+
+            <!-- Arrows -->
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+
+        <div class="hero-text">
             <h1>THOMAS SPORTS</h1>
             <p>Your all-in-one stop for sports equipment and services</p>
         </div>
@@ -51,12 +59,14 @@
             <h2>Contact Us</h2>
             <p>Visit us in-store or reach out for inquiries and assistance.</p>
         </div>
-    </section>
+    </section>s
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Thomas Sports. All Rights Reserved.</p>
     </footer>
-</body>
 
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>
