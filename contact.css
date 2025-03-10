@@ -15,12 +15,12 @@ body {
 
 span{
     position: absolute;
-    right: 20%;
-    top: 11%;
+    right: 1%;
+    top: 1%;
 }
 
 span i:hover {
-    background:  #b3aeae;
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     padding: 5px;
 }
