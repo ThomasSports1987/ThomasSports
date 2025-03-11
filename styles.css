@@ -1,7 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* General styling */
 body {
     margin: 0;
     font-family: 'Graduate', cursive;
+    overflow-x: hidden;
     background-color: #be2525;
     color: white;
 }
@@ -11,15 +18,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 8px 30px;
     background-color: #8b1e1e;
 }
+
+h1{
+    position: absolute;
+    left: 9%;
+}
+
 
 /* Logo */
 .logo img {
     height: 60px;  /* Corrected logo size */
     width: auto;
-}
+    }
 
 /* Navigation menu */
 nav ul {
@@ -50,17 +63,19 @@ nav ul li a:hover {
 .hero {
     position: relative;
     width: 100%;
-    height: 80vh;  /* Increased height to fix half-visible issue */
+    height: 50vh;  /* Increased height to fix half-visible issue */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     overflow: hidden;
+    z-index: 0;
 }
 
 .hero-text {
+ 
     z-index: 10;
-    font-size: 3rem;
+    font-size: 2rem;
  }
 
 /* Slideshow container */
@@ -123,7 +138,7 @@ nav ul li a:hover {
 
 .box {
     width: 30%;
-    padding: 15px;
+    padding: 30px;
     background: #8b1e1e;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     text-align: center;
@@ -151,5 +166,43 @@ footer {
     background-color: #8b1e1e;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+}
+
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-float img {
+    width: 45px;
+    height: 55px;
+    z-index: 1;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    .container {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .box {
+        width: 80%; /* Make boxes take more space */
+    }
 }
