@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     margin: 0;
     font-family: 'Graduate', cursive;
@@ -212,6 +213,7 @@ footer {
         position: absolute;
         left:18%;
     }
+
     .logo img {
         height: 47px;  /* Corrected logo size */
         width: auto;
@@ -219,5 +221,8 @@ footer {
 
     header {
             padding: 8px 10px;
+    }
+    .hero {
+        height: 30vh; 
     }
 }
