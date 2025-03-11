@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-/* General styling */
 body {
     margin: 0;
     font-family: 'Graduate', cursive;
@@ -211,10 +210,10 @@ footer {
      }
     h1{
         position: absolute;
-        left:20%;
+        left:25%;
     }
     .logo img {
-        height: 40px;  /* Corrected logo size */
+        height: 50px;  /* Corrected logo size */
         width: auto;
         }
     
