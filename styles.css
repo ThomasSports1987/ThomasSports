@@ -210,11 +210,14 @@ footer {
      }
     h1{
         position: absolute;
-        left:25%;
+        left:18%;
     }
     .logo img {
-        height: 50px;  /* Corrected logo size */
+        height: 47px;  /* Corrected logo size */
         width: auto;
-        }
-    
+    }
+
+    header {
+            padding: 8px 10px;
+    }
 }
