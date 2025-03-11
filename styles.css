@@ -204,14 +204,15 @@ footer {
         
      }
      .box {
-        width: 80%; 
+        width: 90%; 
         min-width: 280px; 
-        padding: 30px; 
+        padding: 40px; 
         text-align: center;
-        margin: 15px;
+        margin: 12px;
+     }
     h1{
         position: absolute;
-        text-align: center;
+        left:20%;
     }
     
 }

@@ -73,21 +73,16 @@ header p {
 .info-item a {
     color: #3f3e3e;
     text-decoration: none;
-}
+ }
 
 .info-item a:hover {
-    background:  #c55151;
-    transform: scale(1.05);
     color:white;
-    border-radius: 5px;
-    padding: 10px;
-    
-}
-
-.info-item a:focus {
-    outline: 2px solid #be2525;
-}
-
+    text-shadow: -1px -1px 0 black,  
+    1px -1px 0 black,  
+   -1px  1px 0 black,  
+    1px  1px 0 black; 
+ }
+s
 /* Map Styling */
 .map-container {
     width: 100%;
