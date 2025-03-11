@@ -27,7 +27,6 @@ h1{
     left: 9%;
 }
 
-
 /* Logo */
 .logo img {
     height: 60px;  /* Corrected logo size */
@@ -214,5 +213,9 @@ footer {
         position: absolute;
         left:20%;
     }
+    .logo img {
+        height: 40px;  /* Corrected logo size */
+        width: auto;
+        }
     
 }
