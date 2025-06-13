@@ -1,0 +1,299 @@
+/* General styling */
+*{
+    margin: 0;
+    font-family: 'Graduate', cursive;
+}
+    
+body{
+    background-image: linear-gradient(to bottom, rgb(131, 8, 8), rgb(194, 123, 123));
+    background-size:cover ;
+    padding-top: 65px;
+}
+    
+.header{
+    height: 65px;
+    background-color: rgb(145, 6, 6);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+    box-shadow: inset 1px 1px 5px rgba(0,0,0,0.5);
+    z-index: 10;
+}        
+.image{
+    display: flex;
+    flex:1;
+    padding-left: 20px;
+}         
+.img{
+    width: 60px;
+    height: 50px;
+    border-radius: 100px;
+}
+.nav{
+    width: 120px;
+}
+.one{
+    background-color: rgb(117, 0, 0);
+    color: white;
+    text-decoration: none;
+    padding:10px 18px 10px 18px;
+    border-radius: 5px;
+    font-size:15px;
+    transition: background-color 0.2s ease;
+}
+.one:hover{
+     background-color: rgb(175, 41, 41);
+} 
+ 
+.bar{
+    color: white;
+    font-size: 16px;
+    padding:12px 0px 12px 0px;
+    background-color: rgb(168, 36, 36);
+}
+
+.name{
+    font-size: 20px;
+    position: absolute;
+    z-index: 999;
+    color:white;
+    padding: 50px 40px 50px 40px;
+    font-size: 5vw;
+    opacity: 0.4;
+}
+    
+/*.slide{
+    margin-bottom: 80px;
+}
+.slide-img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    box-sizing: border-box;
+}*/
+
+
+/* Hero Section (Slideshow) */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;  /* Increased height to fix half-visible issue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* Slideshow container */
+.slideshow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/* Fix slideshow images visibility */
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensure full coverage */
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+/* Slideshow navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(245, 245, 245, 0.3);
+}
+
+.prev {
+    left: 20px;
+    z-index: 10;
+}
+
+.next {
+    right: 20px;
+    z-index: 10;
+}
+    
+.heading{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    text-align: justify;
+    margin-top: 40px;
+}
+    
+.service-box{
+    height: 400px;
+    background-color: rgba(150, 6, 6, 0.3);
+    margin: 0px 10px 20px 10px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(172, 45, 45);
+    font-size: 40px;
+    
+}
+    
+.intro{
+    height: auto;
+    width: 100%;
+    color: white;
+    background-color: rgba(150, 6, 6, 0.3);
+    overflow: hidden;
+    margin: 100px 0px 50px 0px;
+    text-align: center;
+}
+    
+.story-heading{
+    font-size:25px;
+    font-weight: bold;
+    padding: 50px 0px 10px 0px;
+    
+}
+    
+.story{
+    font-size:17px;
+    padding: 20px 45px 20px 45px;
+    line-height: 30px;
+    opacity: 0.7;
+}
+    
+.story-img{
+    width: 60px;
+    height: 50px;
+    border-radius: 100px;
+    margin-bottom: 50px;
+}
+    
+.logos{
+    display: flex;
+    flex-direction: row;
+    overflow:hidden;
+    justify-content: center;
+    margin:120px 0px 60px 0px;
+    height: 100px;
+    align-items: flex-end;
+}
+    
+.logo{
+    padding: 2px;
+}
+    
+.img-logo{
+    width:16vw;
+    height: 50px;
+    object-fit: contain;
+    object-position: bottom;
+}
+    
+ .footer {
+    height: 335px;
+    width: auto;
+    color: rgb(221, 143, 143);
+    background-color: rgb(145, 6, 6);
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+}
+    
+.links{
+    padding: 30px 0px 30px 60px;
+    line-height: 25px;
+}
+    
+.icon{
+    display: inline-block;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+    
+.map, .insta, .yt, .tel{
+    text-decoration: none;
+    color: rgb(230, 169, 169);
+    font-size: 20px;
+}
+    
+.insta, .tel{
+    padding-left: 15px;
+}
+.tel{
+    font-size: 15px;
+}
+.title{
+    padding-top:20px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.address{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 200px;
+    height: 70px;
+    font-size: 15px;
+}
+    
+.line{
+    background-color: rgb(230, 169, 169);
+    border: none;
+    height: 1px;
+    width: 100%;
+}
+    
+.copyright{
+    text-align: center;
+    margin:10px 0px 10px 0px;
+    font-size: 12px;
+}
+    
+.float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+
+  .whatsapp {
+    background-color: #25d366;
+    color: white;
+    width: 70px;
+    height: 70px;
+    font-size: 80px;
+    border-radius: 100%;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .whatsapp:hover {
+    background-color: #20b858;
+  }
