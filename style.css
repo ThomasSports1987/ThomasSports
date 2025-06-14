@@ -65,17 +65,6 @@ body{
     font-size: 5vw;
     opacity: 0.7;
 }
-    
-/*.slide{
-    margin-bottom: 80px;
-}
-.slide-img{
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    box-sizing: border-box;
-}*/
-
 
 /* Hero Section (Slideshow) */
 .hero {
@@ -284,7 +273,7 @@ body{
     padding-right: 8px;
  }
     
-.map, .insta, .yt, .tel{
+.insta, .yt, .tel{
     text-decoration: none;
     color: rgb(230, 169, 169);
     font-size: 20px;
