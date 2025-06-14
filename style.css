@@ -63,7 +63,7 @@ body{
     color:white;
     padding: 50px 50px 50px 50px;
     font-size: 5vw;
-    opacity: 0.4;
+    opacity: 0.7;
 }
     
 /*.slide{
@@ -146,21 +146,66 @@ body{
     font-weight: bold;
     padding: 10px;
     text-align: justify;
-    margin-top: 40px;
+    margin-top: 70px;
 }
     
 .service-box{
-    height: 400px;
-    background-color: rgba(150, 6, 6, 0.3);
-    margin: 0px 10px 20px 10px;
+    height: 300px;
+    background-color: rgba(136, 6, 6, 0.3);
+    margin: 10px 10px 20px 10px;
     border-radius: 15px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     color:rgb(172, 45, 45);
     font-size: 40px;
-    
+    padding: 20px 20px 20px 20px;
+    gap:10px;
 }
+
+.sec-one, .sec-two{
+    flex:1;
+    display: flex;
+    position: relative; /* Needed for pseudo-element */
+    overflow: hidden;
+    border-left: 5px solid white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    justify-content: center;
+    align-items: center ;
+    width: 70vw;
+    margin:10px;
+    color:white;
+    font-size:20px;
+    z-index: 1;
+    text-align: center;
+}
+
+.sec-two::before {
+    content: "";
+    position: absolute;
+    top:0;left:0;Right:0;bottom:0;
+    background-image: url(img/grip.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity:0.3;
+    z-index: -1;
+}
+
+.sec-one::before {
+    content: "";
+    position: absolute;
+    top:0;left:0;Right:0;bottom:0;
+    background-image: url(img/string.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity:0.3;
+    z-index: -1;
+
+}
+
     
 .intro{
     height: auto;
@@ -168,7 +213,7 @@ body{
     color: white;
     background-color: rgba(150, 6, 6, 0.3);
     overflow: hidden;
-    margin: 100px 0px 50px 0px;
+    margin: 120px 0px 50px 0px;
     text-align: center;
 }
     
@@ -215,7 +260,7 @@ body{
 }
     
  .footer {
-    height: 335px;
+    height: 500px;
     width: auto;
     color: rgb(221, 143, 143);
     background-color: rgb(145, 6, 6);
@@ -234,6 +279,11 @@ body{
     padding-right: 8px;
     padding-left: 8px;
 }
+
+.contact-icon{
+    font-size: 20px;
+    padding-right: 8px;
+ }
     
 .map, .insta, .yt, .tel{
     text-decoration: none;
@@ -258,13 +308,34 @@ body{
     width: 200px;
     height: 70px;
     font-size: 15px;
+    
 }
+
+ .map {
+    position: relative;
+    overflow: hidden;
+    width: 50vw;
+    height: 25vw;
+    
+  }
+
+  .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 10px 0px 30px 60px;
+   
+  }
     
 .line{
     background-color: rgb(230, 169, 169);
     border: none;
     height: 1px;
     width: 100%;
+    margin-top: 30px;
 }
     
 .copyright{
