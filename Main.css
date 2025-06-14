@@ -61,7 +61,7 @@ body{
     position: absolute;
     z-index: 999;
     color:white;
-    padding: 50px 40px 50px 40px;
+    padding: 50px 50px 50px 50px;
     font-size: 5vw;
     opacity: 0.4;
 }
@@ -198,7 +198,7 @@ body{
     flex-direction: row;
     overflow:hidden;
     justify-content: center;
-    margin:120px 0px 60px 0px;
+    margin:150px 0px 60px 0px;
     height: 100px;
     align-items: flex-end;
 }
