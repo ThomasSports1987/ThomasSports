@@ -65,6 +65,17 @@ body{
     font-size: 5vw;
     opacity: 0.7;
 }
+    
+/*.slide{
+    margin-bottom: 80px;
+}
+.slide-img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    box-sizing: border-box;
+}*/
+
 
 /* Hero Section (Slideshow) */
 .hero {
@@ -135,58 +146,19 @@ body{
     font-weight: bold;
     padding: 10px;
     text-align: justify;
-    margin-top: 70px;
+    margin-top: 40px;
 }
     
-.service-box {
-    height: 300px;
-    background-color: rgba(136, 6, 6, 0.3);
-    margin: 10px;
+.service-box{
+    height: 400px;
+    background-color: rgba(150, 6, 6, 0.3);
+    margin: 0px 10px 20px 10px;
     border-radius: 15px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 40px;
-    padding: 20px;
-    gap: 10px;
-}
-
-.sec-one, .sec-two {
-    flex: 1;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-    border-left: 5px solid white;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     justify-content: center;
     align-items: center;
-    width: 70vw;
-    margin: 10px;
-    color: white;
-    font-size: 20px;
-    z-index: 1;
-    text-align: center;
-}
-
-.sec-one::before,
-.sec-two::before {
-    content: "";
-    position: absolute;
-    inset: 0; /* shorthand for top, right, bottom, left = 0 */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity: 0.3;
-    z-index: -1;
-}
-
-.sec-one::before {
-    background-image: url('img/string.jpg');
-}
-
-.sec-two::before {
-    background-image: url('img/grip.jpg');
+    color:rgb(172, 45, 45);
+    font-size: 40px;
 }
     
 .intro{
@@ -195,7 +167,7 @@ body{
     color: white;
     background-color: rgba(150, 6, 6, 0.3);
     overflow: hidden;
-    margin: 120px 0px 50px 0px;
+    margin: 100px 0px 50px 0px;
     text-align: center;
 }
     
@@ -242,7 +214,7 @@ body{
 }
     
  .footer {
-    height: 500px;
+    height: 360x;
     width: auto;
     color: rgb(221, 143, 143);
     background-color: rgb(145, 6, 6);
@@ -267,7 +239,7 @@ body{
     padding-right: 8px;
  }
     
-.insta, .yt, .tel{
+.map, .insta, .yt, .tel{
     text-decoration: none;
     color: rgb(230, 169, 169);
     font-size: 20px;
@@ -293,23 +265,24 @@ body{
     
 }
 
-.map {
-  position: relative;
-  overflow: hidden;
-  width: 100%;          /* make it responsive or set a fixed width */
-  max-width: 200px;     /* control max size */
-  height: 100px;        /* reasonable height for maps */
-  margin-left: 60px;
-}
+ .map {
+    position: relative;
+    overflow: hidden;
+    width: 50vw;
+    height: 25vw;
+    
+  }
 
-.map iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
+  .map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 10px 0px 30px 60px;
+   
+  }
     
 .line{
     background-color: rgb(230, 169, 169);
