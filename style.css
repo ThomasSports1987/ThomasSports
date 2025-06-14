@@ -138,62 +138,56 @@ body{
     margin-top: 70px;
 }
     
-.service-box{
+.service-box {
     height: 300px;
     background-color: rgba(136, 6, 6, 0.3);
-    margin: 10px 10px 20px 10px;
+    margin: 10px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 40px;
-    padding: 20px 20px 20px 20px;
-    gap:10px;
+    padding: 20px;
+    gap: 10px;
 }
 
-.sec-one, .sec-two{
-    flex:1;
+.sec-one, .sec-two {
+    flex: 1;
     display: flex;
-    position: relative; /* Needed for pseudo-element */
+    position: relative;
     overflow: hidden;
     border-left: 5px solid white;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     justify-content: center;
-    align-items: center ;
+    align-items: center;
     width: 70vw;
-    margin:10px;
-    color:white;
-    font-size:20px;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
     z-index: 1;
     text-align: center;
 }
 
+.sec-one::before,
 .sec-two::before {
     content: "";
     position: absolute;
-    top:0;left:0;Right:0;bottom:0;
-    background-image: url(img/grip.jpg);
+    inset: 0; /* shorthand for top, right, bottom, left = 0 */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    opacity:0.3;
+    opacity: 0.3;
     z-index: -1;
 }
 
 .sec-one::before {
-    content: "";
-    position: absolute;
-    top:0;left:0;Right:0;bottom:0;
-    background-image: url(img/string.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    opacity:0.3;
-    z-index: -1;
-
+    background-image: url('img/string.jpg');
 }
 
+.sec-two::before {
+    background-image: url('img/grip.jpg');
+}
     
 .intro{
     height: auto;
