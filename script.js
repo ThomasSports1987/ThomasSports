@@ -1,30 +1,37 @@
-let currentIndex = 0;
-const slides = document.querySelectorAll(".slide");
+// Hero slider logic
+window.addEventListener('DOMContentLoaded', function() {
+    let heroCurrentIndex = 0;
+    const heroSlides = document.querySelectorAll('.hero-slide');
+    const heroPrevBtn = document.querySelector('.hero-prev');
+    const heroNextBtn = document.querySelector('.hero-next');
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.classList.remove("active");
-        if (i === index) {
-            slide.classList.add("active");
-        }
-    });
-}
-
-// Function to change slide manually
-function changeSlide(direction) {
-    currentIndex += direction;
-    if (currentIndex < 0) {
-        currentIndex = slides.length - 1;
-    } else if (currentIndex >= slides.length) {
-        currentIndex = 0;
+    function showHeroSlide(index) {
+        heroSlides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (i === index) {
+                slide.classList.add('active');
+            }
+        });
     }
-    showSlide(currentIndex);
-}
-
-// Auto-slide every 7 seconds
-setInterval(() => {
-    changeSlide(1);
-}, 7000);
-
-// Show the first slide initially
-showSlide(currentIndex);
+    function changeHeroSlide(direction) {
+        heroCurrentIndex += direction;
+        if (heroCurrentIndex < 0) {
+            heroCurrentIndex = heroSlides.length - 1;
+        } else if (heroCurrentIndex >= heroSlides.length) {
+            heroCurrentIndex = 0;
+        }
+        showHeroSlide(heroCurrentIndex);
+    }
+    if (heroPrevBtn && heroNextBtn) {
+        heroPrevBtn.addEventListener('click', () => changeHeroSlide(-1));
+        heroNextBtn.addEventListener('click', () => changeHeroSlide(1));
+    }
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') changeHeroSlide(-1);
+        if (e.key === 'ArrowRight') changeHeroSlide(1);
+    });
+    setInterval(() => {
+        changeHeroSlide(1);
+    }, 7000);
+    showHeroSlide(heroCurrentIndex);
+});
