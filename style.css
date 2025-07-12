@@ -259,15 +259,9 @@ body {
     background: none;
     text-align: center;
 }
-.brands-logos {
-    display: flex;
-    gap: 32px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
+
 .brand-logo {
-    width: 110px;
+    width: 100%;
     height: 50px;
     object-fit: contain;
     opacity: 0.85;
@@ -436,10 +430,11 @@ body {
 
 /* Responsive Design */
 @media (max-width: 900px) {
-    .header-flex, .footer-flex, .about-flex, .contact-flex, .products-grid, .brands-logos {
+    .header-flex, .footer-flex, .about-flex, .contact-flex, .products-grid {
         flex-direction: column;
         align-items: center;
         gap: 24px;
+        flex-wrap: nowrap;
     }
     .nav-list {
         gap: 12px;
@@ -726,7 +721,7 @@ body {
         margin-bottom: 18px;
         min-width: unset;
         max-width: unset;
-        padding: 10px 2px;
+        padding: 25px;
     }
     .find-us-label {
         margin-bottom: 8px;
@@ -740,6 +735,15 @@ body {
         word-break: break-word;
     }
 }
+.contact-info-tel {
+    font-size: 1.15rem;
+    color: rgb(145, 6, 6);
+    font-weight: bold;
+}
+
+.qr-code {
+    height: 150px;
+}
 
 .contact-info-top {
     display: flex;
@@ -751,6 +755,11 @@ body {
     color: rgb(145, 6, 6);
     font-weight: bold;
 }
+@media (max-width: 575.98px) {
+    .contact-info-top {
+        gap: 12px;
+    }
+}
 .contact-info-top .fa {
     font-size: 1.3em;
     vertical-align: middle;
@@ -761,6 +770,11 @@ body {
     text-decoration: none;
     font-size: 1.25em;
     transition: color 0.2s, text-decoration 0.2s;
+}
+@media (max-width: 575.98px) {
+    .contact-info-top a {
+        font-size: 16px; /* override for mobile */
+    }
 }
 .contact-info-top a:hover, .contact-info-top a:focus {
     color: #b00;
