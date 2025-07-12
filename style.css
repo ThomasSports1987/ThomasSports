@@ -766,7 +766,13 @@ body {
     color: #b00;
     text-decoration: underline;
 }
-
+.contact-phone {
+    white-space: nowrap;
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+}
+  
 .find-us-label {
     font-size: 1.08em;
     color: #444;
